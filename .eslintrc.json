@@ -1,0 +1,17 @@
+{
+  "extends": ["universe/native"],
+  // "parser": "@typescript-eslint/parser",
+  // "plugins": ["@typescript-eslint/eslint-plugin"],
+  // "parserOptions": {
+  //   "ecmaFeatures": {
+  //     "jsx": true
+  //   },
+  //   "project": "./tsconfig.json"
+  // },
+  "rules": {
+    "import/order": 0,
+    "react-native/no-inline-styles": 0,
+    "import/namespace": 0,
+    "no-duplicate-imports": "error"
+  }
+}
