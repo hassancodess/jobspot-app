@@ -9,6 +9,7 @@ export default function Page() {
 			<Main>
 				<YStack>
 					<Title>Hello World!</Title>
+					<Title>Hello World!</Title>
 					<Subtitle>This is the first page of your app.</Subtitle>
 				</YStack>
 				<Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
