@@ -5,12 +5,19 @@
     "android": "expo start --android",
     "format": "prettier --loglevel warn --write \"**/*.{--write,ts,tsx,css,md}\"",
     "ios": "expo start --ios",
-    "start": "expo start",
     "web": "expo start --web",
+    "start": "EXPO_NO_DOTENV=1 expo start",
+    "start:staging": "APP_ENV=staging npm run start",
+    "start:production": "APP_ENV=production npm run start",
+    "start:development": "APP_ENV=development npm run start",
+    "prebuild:production": "APP_ENV=production npx expo prebuild",
+    "prebuild:staging": "APP_ENV=staging npx expo prebuild",
+    "prebuild:development": "APP_ENV=development npx expo prebuild",
     "prepare": "husky install",
     "lint": "eslint . --cache --fix --ext .ts,.tsx",
     "pretest": "npm run lint",
-    "posttest": "npm run format"
+    "posttest": "npm run format",
+    "release": "release-it"
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
