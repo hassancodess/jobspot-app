@@ -1,16 +1,11 @@
 import { Link } from 'expo-router';
 import { YStack } from 'tamagui';
-
-import { Container, Main, Title, Subtitle, Button, ButtonText } from '../tamagui.config';
-
+import { Container, Main, Title, Subtitle, Button, ButtonText } from '../../tamagui.config';
 export default function Page() {
 	return (
 		<Container>
 			<Main>
 				<YStack>
-					<Title>Hello World!</Title>
-					<Title>Hello World!</Title>
-					<Title>Hello World!</Title>
 					<Title>Hello World!</Title>
 					<Subtitle>This is the first page of your app.</Subtitle>
 				</YStack>
